@@ -1,5 +1,3 @@
-/* eslint-disable react/jsx-max-depth */
-/* eslint-disable max-len */
 import Image from 'next/image';
 
 import classes from './index.module.scss';
@@ -21,8 +19,23 @@ export default function Home() {
             <h2>Front End Developer</h2>
 
             <div className={ classes.icons }>
-              <Image src="/icons/github.svg" width={ 24 } height={ 24 } alt="Github" />
-              <Image src="/icons/linkedin.svg" width={ 24 } height={ 24 } alt="Linkedin" />
+              <a href="https://github.com/adryanrosa" target="_blank" rel="noreferrer">
+                <Image
+                  src="/icons/github.svg"
+                  width={ 24 }
+                  height={ 24 }
+                  alt="Github"
+                />
+              </a>
+
+              <a href="https://www.linkedin.com/in/adryan-rosa" target="_blank" rel="noreferrer">
+                <Image
+                  src="/icons/linkedin.svg"
+                  width={ 24 }
+                  height={ 24 }
+                  alt="Linkedin"
+                />
+              </a>
             </div>
           </div>
 

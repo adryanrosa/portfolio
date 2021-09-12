@@ -43,6 +43,10 @@
     display: flex;
     gap: 1rem;
 
+    a {
+      display: flex;
+    }
+
     img {
       cursor: pointer;
     }
