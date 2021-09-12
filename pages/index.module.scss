@@ -45,6 +45,10 @@
 
     a {
       display: flex;
+
+      &:focus {
+        outline: 0.125rem solid var(--clr-primary);
+      }
     }
 
     img {

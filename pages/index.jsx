@@ -28,7 +28,7 @@ export default function Home() {
                 />
               </a>
 
-              <a href="https://www.linkedin.com/in/adryan-rosa" target="_blank" rel="noreferrer">
+              <a href="https://www.linkedin.com/in/adryan-rosa/" target="_blank" rel="noreferrer">
                 <Image
                   src="/icons/linkedin.svg"
                   width={ 24 }
