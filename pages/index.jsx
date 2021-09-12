@@ -19,6 +19,11 @@ export default function Home() {
             </h1>
 
             <h2>Front End Developer</h2>
+
+            <div className={ classes.icons }>
+              <Image src="/icons/github.svg" width={ 24 } height={ 24 } alt="Github" />
+              <Image src="/icons/linkedin.svg" width={ 24 } height={ 24 } alt="Linkedin" />
+            </div>
           </div>
 
           <div>

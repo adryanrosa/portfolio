@@ -34,9 +34,18 @@
     line-height: 1.15;
   }
 
-  h2,
-  h3 {
+  h2 {
     opacity: 0.75;
+  }
+
+  .icons {
+    margin-top: 1rem;
+    display: flex;
+    gap: 1rem;
+
+    img {
+      cursor: pointer;
+    }
   }
 
   .buttons {
