@@ -1,0 +1,42 @@
+@use "../src/styles/utils" as *;
+
+.hero {
+  height: 100vh;
+  background-image: url("../public/backgrounds/bg-hero-mobile.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  @include breakpoint-up(large) {
+    background-image: url("../public/backgrounds/bg-hero-desktop.svg");
+  }
+
+  .container {
+    max-width: 64rem;
+    @include margin-x-auto;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: 5fr 4fr;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  h1 {
+    font-size: 4rem;
+    color: var(--clr-neutral-100);
+    line-height: 1.15;
+  }
+
+  h2,
+  h3 {
+    opacity: 0.75;
+  }
+}
