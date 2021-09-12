@@ -1,0 +1,9 @@
+:root {
+  --fw-regular: 400;
+  --fw-bold: 500;
+}
+
+body {
+  font-family: var(--ff-secondary);
+  font-weight: var(--fw-regular);
+}
