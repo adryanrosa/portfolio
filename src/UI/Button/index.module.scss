@@ -1,0 +1,25 @@
+@use "../../styles/utils" as *;
+
+.button {
+  color: var(--clr-primary);
+  font-size: 1.25rem;
+
+  background-color: transparent;
+  padding: 0.625rem 2rem;
+  border: 0.125rem solid var(--clr-primary);
+  border-radius: 0.125rem;
+  cursor: pointer;
+
+  transition: color 250ms ease-in-out, background-color 250ms ease-in-out;
+
+  &:focus {
+    outline: none;
+  }
+
+  @include media-hover {
+    &:hover {
+      background-color: var(--clr-primary);
+      color: var(--clr-neutral-700);
+    }
+  }
+}

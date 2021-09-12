@@ -12,14 +12,13 @@
 
   .container {
     max-width: 64rem;
-    @include margin-x-auto;
     height: 100%;
+    @include margin-x-auto;
 
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    gap: 4rem;
+    gap: 6rem;
   }
 
   .grid {
@@ -38,5 +37,11 @@
   h2,
   h3 {
     opacity: 0.75;
+  }
+
+  .buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
   }
 }

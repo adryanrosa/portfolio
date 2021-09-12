@@ -4,6 +4,7 @@ import Image from 'next/image';
 
 import classes from './index.module.scss';
 import Code from '../public/images/code.svg';
+import Button from '../src/UI/Button';
 
 export default function Home() {
   return (
@@ -25,8 +26,9 @@ export default function Home() {
           </div>
         </div>
 
-        <div>
-          <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, eaque, dolore cum nulla reiciendis iste ea consequuntur ad adipisci saepe quas accusamus delectus asperiores, non earum vel officiis neque dicta.</h3>
+        <div className={ classes.buttons }>
+          <Button>View Projects</Button>
+          <Button>Download Resume</Button>
         </div>
       </div>
     </main>
