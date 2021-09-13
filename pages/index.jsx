@@ -9,7 +9,7 @@ export default function Home() {
     <main className={ classes.hero }>
       <div className={ classes.container }>
         <div className={ classes.grid }>
-          <div>
+          <div className={ classes['text-container'] }>
             <h1>
               Hey,
               <br />
@@ -39,7 +39,7 @@ export default function Home() {
             </div>
           </div>
 
-          <div>
+          <div className={ classes['image-container'] }>
             <Image src={ Code } alt="Code thinking" />
           </div>
         </div>

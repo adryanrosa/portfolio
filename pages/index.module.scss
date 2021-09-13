@@ -1,7 +1,11 @@
 @use "../src/styles/utils" as *;
 
 .hero {
-  height: 100vh;
+  min-height: 100vh;
+  padding: 1.5rem;
+  display: flex;
+  align-items: center;
+
   background-image: url("../public/backgrounds/bg-hero-mobile.svg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -12,26 +16,49 @@
 
   .container {
     max-width: 64rem;
-    height: 100%;
     @include margin-x-auto;
 
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    gap: 6rem;
+    gap: 3rem;
+
+    @include breakpoint-up(large) {
+      gap: 6rem;
+    }
   }
 
   .grid {
     display: grid;
-    grid-template-columns: 5fr 4fr;
-    align-items: center;
     gap: 2rem;
+
+    @include breakpoint-down(medium) {
+      grid-template-areas: "image" "text";
+
+      .text-container {
+        grid-area: text;
+        text-align: center;
+      }
+
+      .image-container {
+        grid-area: image;
+        max-width: 30rem;
+        @include margin-x-auto;
+      }
+    }
+
+    @include breakpoint-up(large) {
+      grid-template-columns: 5fr 4fr;
+      align-items: center;
+    }
   }
 
   h1 {
-    font-size: 4rem;
     color: var(--clr-neutral-100);
     line-height: 1.15;
+
+    @include breakpoint-up(large) {
+      font-size: 4rem;
+    }
   }
 
   h2 {
@@ -42,6 +69,10 @@
     margin-top: 1rem;
     display: flex;
     gap: 1rem;
+
+    @include breakpoint-down(medium) {
+      justify-content: center;
+    }
 
     a {
       display: flex;
@@ -58,7 +89,16 @@
 
   .buttons {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     gap: 1rem;
+
+    @include breakpoint-down(medium) {
+      @include margin-x-auto;
+    }
+
+    @include breakpoint-up(large) {
+      flex-direction: row;
+      justify-content: center;
+    }
   }
 }
