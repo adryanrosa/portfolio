@@ -120,7 +120,14 @@
     .button-flex {
       display: flex;
       align-items: center;
+      justify-content: space-between;
       gap: 1rem;
+    }
+
+    .flex-reverse {
+      @include breakpoint-up(large) {
+        flex-direction: row-reverse;
+      }
     }
   }
 }
