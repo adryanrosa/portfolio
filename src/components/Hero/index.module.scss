@@ -1,10 +1,7 @@
 @use "../../styles/utils" as *;
 
 .hero {
-  min-height: 100vh;
   padding: 1.5rem;
-  display: flex;
-  align-items: center;
 
   background-image: url("../../../public/backgrounds/bg-hero-mobile.svg");
   background-size: cover;
@@ -15,14 +12,18 @@
   }
 
   .container {
-    max-width: 70rem;
+    max-width: 75rem;
     @include margin-x-auto;
+
+    margin-top: 5rem;
 
     display: flex;
     flex-direction: column;
     gap: 3rem;
 
     @include breakpoint-up(large) {
+      margin-top: 10rem;
+
       gap: 6rem;
     }
   }
