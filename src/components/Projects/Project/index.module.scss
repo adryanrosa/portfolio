@@ -42,8 +42,22 @@
 
   .icons {
     margin-top: 2rem;
-    cursor: pointer;
+    font-size: 1.5rem;
     display: flex;
     gap: 0.875rem;
+
+    a {
+      cursor: pointer;
+      display: flex;
+
+      &:focus {
+        color: var(--clr-primary);
+        outline: none;
+      }
+
+      &:hover {
+        color: var(--clr-primary);
+      }
+    }
   }
 }
