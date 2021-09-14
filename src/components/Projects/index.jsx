@@ -15,6 +15,8 @@ function Projects() {
       title: 'GraphQL Countries API with color theme switcher',
       text: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas illo eligendi dolores odio minus laboriosam rem expedita similique dicta quo!',
       tools: ['Next', 'Webpack', 'Sass', 'BEM', 'Gulp', 'PostCSS'],
+      github: 'https://github.com/adryanrosa/graphql-countries-api-with-color-theme-switcher',
+      live: 'https://graphql-countries-api-with-color-theme-switcher-adryanrosa.vercel.app/',
     },
     {
       id: 1,
@@ -23,6 +25,8 @@ function Projects() {
       title: 'Bookmark landing page',
       text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente praesentium, modi quisquam at porro eum quibusdam earum veritatis quidem dolorem.',
       tools: ['React', 'Sass', 'CSS Modules'],
+      github: 'https://github.com/adryanrosa/bookmark-landing-page',
+      live: 'https://bookmark-landing-page-adryanrosa.vercel.app/',
     },
     {
       id: 2,
@@ -31,13 +35,15 @@ function Projects() {
       title: 'URL shortening API landing page',
       text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi quia corporis ducimus cupiditate expedita officiis, repellendus est officia inventore fugit sunt modi, hic esse nulla.',
       tools: ['React', 'Sass', 'BEM'],
+      github: 'https://github.com/adryanrosa/url-shortening-api-landing-page',
+      live: 'https://url-shortening-api-landing-page-alpha.vercel.app/',
     },
   ];
 
   return (
     <section className={ classes.projects }>
       <div className={ classes.container }>
-        {projects.map(({ id, image, placeholder, title, tools, text }) => (
+        {projects.map(({ id, image, placeholder, title, tools, text, github, live }) => (
           <Project
             key={ id }
             image={ image }
@@ -45,6 +51,8 @@ function Projects() {
             title={ title }
             tools={ tools }
             text={ text }
+            github={ github }
+            live={ live }
           />
         ))}
       </div>
