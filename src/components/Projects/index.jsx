@@ -41,7 +41,7 @@ function Projects() {
   ];
 
   return (
-    <section className={ classes.projects }>
+    <section id="projects" className={ classes.projects }>
       <div className={ classes.container }>
         {projects.map(({ id, image, placeholder, title, tools, text, github, live }) => (
           <Project

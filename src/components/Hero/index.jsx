@@ -4,6 +4,7 @@ import Image from 'next/image';
 import classes from './index.module.scss';
 import Code from '../../../public/images/code.svg';
 import Button from '../../UI/Button';
+import buttonClass from '../../UI/Button/index.module.scss';
 
 function Hero() {
   return (
@@ -46,7 +47,7 @@ function Hero() {
         </div>
 
         <div className={ classes.buttons }>
-          <Button>
+          <a href="#projects" className={ buttonClass.button }>
             <div className={ classes['button-flex'] }>
               View Projects
 
@@ -54,7 +55,7 @@ function Hero() {
                 <path fillRule="evenodd" d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1z" />
               </svg>
             </div>
-          </Button>
+          </a>
 
           <Button>
             <div className={ `${classes['button-flex']}${` ${classes['flex-reverse']}`}` }>

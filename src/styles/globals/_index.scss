@@ -4,6 +4,10 @@
 @forward "colors";
 @forward "typography";
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: var(--clr-neutral-700);
 }
