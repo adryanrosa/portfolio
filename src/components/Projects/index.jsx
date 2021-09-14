@@ -2,9 +2,9 @@
 import classes from './index.module.scss';
 
 import Project from './Project';
-import GraphqlCountriesApi from '../../../public/images/graphql-countries-api.png';
-import BookmarkingLandingPage from '../../../public/images/bookmark-landing-page.png';
-import UrlShorteningPage from '../../../public/images/url-shortening-api.png';
+import GraphqlCountriesApi from '../../../public/images/graphql-countries-api.gif';
+import BookmarkingLandingPage from '../../../public/images/bookmark-landing-page.gif';
+import UrlShorteningPage from '../../../public/images/url-shortening-api.gif';
 
 function Projects() {
   const projects = [
