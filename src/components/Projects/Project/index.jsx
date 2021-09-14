@@ -4,11 +4,15 @@ import Image from 'next/image';
 import classes from './index.module.scss';
 import Button from '../../../UI/Button';
 
-function Project({ image, title, tools, text }) {
+function Project({ image, title, tools, text, placeholder }) {
   return (
     <div className={ classes.project }>
       <div>
-        <Image src={ image } />
+        <Image
+          src={ image }
+          blurDataURL={ placeholder }
+          placeholder="blur"
+        />
       </div>
 
       <div>
