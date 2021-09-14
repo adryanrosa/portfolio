@@ -10,9 +10,9 @@ function Project({ image, title, tools, text }) {
       <div>
         <Image
           src={ image }
-          blurDataURL="/public/images/graphql-countries-api.png"
-          placeholder="blur"
           layout="responsive"
+          placeholder="blur"
+          blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8/x8AAwMCAO+ip1sAAAAASUVORK5CYII="
         />
       </div>
 
