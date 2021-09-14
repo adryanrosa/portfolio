@@ -4,14 +4,15 @@ import Image from 'next/image';
 import classes from './index.module.scss';
 import Button from '../../../UI/Button';
 
-function Project({ image, placeholder, title, tools, text }) {
+function Project({ image, title, tools, text }) {
   return (
     <div className={ classes.project }>
       <div>
         <Image
           src={ image }
-          blurDataURL={ placeholder }
+          blurDataURL="/public/images/graphql-countries-api.png"
           placeholder="blur"
+          layout="responsive"
         />
       </div>
 
