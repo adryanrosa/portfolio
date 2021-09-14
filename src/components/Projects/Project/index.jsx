@@ -1,11 +1,43 @@
 import Image from 'next/image';
 
 import classes from './index.module.scss';
+import Button from '../../../UI/Button';
 
-function Project({ image }) {
+import Github from '../../../../public/icons/github.svg';
+import Live from '../../../../public/icons/display.svg';
+
+function Project({ image, title, tools, text }) {
   return (
     <div className={ classes.project }>
-      <Image src={ image } />
+      <div>
+        <Image src={ image } />
+      </div>
+
+      <div>
+        <h2>{title}</h2>
+
+        <div className={ classes.buttons }>
+          {tools.map((tool) => <Button key={ tool }>{tool}</Button>)}
+        </div>
+
+        <p>{text}</p>
+        <p>{text}</p>
+
+        <div className={ classes.icons }>
+          <Image
+            src={ Github }
+            alt="Github"
+            width={ 24 }
+            height={ 24 }
+          />
+          <Image
+            src={ Live }
+            alt="Live Site"
+            width={ 24 }
+            height={ 24 }
+          />
+        </div>
+      </div>
     </div>
   );
 }
