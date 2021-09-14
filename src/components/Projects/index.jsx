@@ -13,21 +13,21 @@ function Projects() {
       image: GraphqlCountriesApi,
       title: 'GraphQL Countries API with color theme switcher',
       text: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas illo eligendi dolores odio minus laboriosam rem expedita similique dicta quo!',
-      tools: ['Next', 'Sass', 'Next', 'Sass', 'Next', 'Sass', 'Next', 'Sass'],
+      tools: ['Next', 'Webpack', 'Sass', 'BEM', 'Gulp', 'PostCSS'],
     },
     {
       id: 1,
       image: BookmarkingLandingPage,
       title: 'Bookmark landing page',
       text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente praesentium, modi quisquam at porro eum quibusdam earum veritatis quidem dolorem.',
-      tools: ['Next', 'Sass'],
+      tools: ['React', 'Sass', 'CSS Modules'],
     },
     {
       id: 2,
       image: UrlShorteningPage,
       title: 'URL shortening API landing page',
       text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi quia corporis ducimus cupiditate expedita officiis, repellendus est officia inventore fugit sunt modi, hic esse nulla.',
-      tools: ['Next', 'Sass'],
+      tools: ['React', 'Sass', 'BEM'],
     },
   ];
 
