@@ -1,20 +1,36 @@
+@use "../../../styles/utils" as *;
+
 .project {
   background-color: var(--clr-neutral-400);
   padding: 1.5rem;
   border-radius: 0.25rem;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
 
   display: grid;
-  grid-template-columns: 2fr 3fr;
-  align-items: center;
   gap: 2rem;
+
+  @include breakpoint-up(large) {
+    grid-template-columns: 2fr 3fr;
+    align-items: center;
+  }
+
+  @include breakpoint-down(medium) {
+    max-width: 30rem;
+    @include margin-x-auto;
+  }
 
   h2 {
     margin-bottom: 0.375rem;
   }
 
+  p {
+    opacity: 0.9375;
+  }
+
   .buttons {
     margin-bottom: 1rem;
     display: flex;
+    flex-wrap: wrap;
     gap: 0.375rem;
 
     button {

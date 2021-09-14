@@ -13,7 +13,7 @@ function Projects() {
       image: GraphqlCountriesApi,
       title: 'GraphQL Countries API with color theme switcher',
       text: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas illo eligendi dolores odio minus laboriosam rem expedita similique dicta quo!',
-      tools: ['Next', 'Sass'],
+      tools: ['Next', 'Sass', 'Next', 'Sass', 'Next', 'Sass', 'Next', 'Sass'],
     },
     {
       id: 1,
