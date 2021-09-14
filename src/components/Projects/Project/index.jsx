@@ -4,7 +4,7 @@ import Image from 'next/image';
 import classes from './index.module.scss';
 import Button from '../../../UI/Button';
 
-function Project({ image, title, tools, text }) {
+function Project({ image, placeholder, title, tools, text }) {
   return (
     <div className={ classes.project }>
       <div>
@@ -12,7 +12,7 @@ function Project({ image, title, tools, text }) {
           src={ image }
           layout="responsive"
           placeholder="blur"
-          blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8/x8AAwMCAO+ip1sAAAAASUVORK5CYII="
+          blurDataURL={ placeholder }
         />
       </div>
 
