@@ -116,6 +116,11 @@
       font-family: var(--ff-primary);
       font-weight: var(--fw-bold);
       color: var(--clr-primary);
+
+      &:hover,
+      &:focus {
+        color: var(--clr-neutral-700);
+      }
     }
 
     @include breakpoint-down(medium) {
