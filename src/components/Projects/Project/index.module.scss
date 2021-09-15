@@ -42,6 +42,14 @@
     button {
       font-size: 0.75rem;
       padding: 0.12625rem 0.5rem;
+      cursor: default;
+
+      @include media-hover {
+        &:hover {
+          background-color: transparent;
+          color: var(--clr-primary);
+        }
+      }
 
       @include breakpoint-up(large) {
         font-size: 0.875rem;
@@ -59,13 +67,11 @@
       cursor: pointer;
       display: flex;
 
-      &:focus {
-        color: var(--clr-primary);
-        outline: none;
-      }
-
-      &:hover {
-        color: var(--clr-primary);
+      @include media-hover {
+        &:hover,
+        &:focus {
+          color: var(--clr-primary);
+        }
       }
     }
   }

@@ -36,9 +36,11 @@
       opacity: 0.75;
       font-weight: var(--fw-regular);
 
-      &:focus {
-        color: var(--clr-primary);
-        outline: none;
+      @include media-hover {
+        &:hover,
+        &:focus {
+          color: var(--clr-primary);
+        }
       }
     }
   }

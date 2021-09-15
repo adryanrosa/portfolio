@@ -96,13 +96,11 @@
       cursor: pointer;
       display: flex;
 
-      &:focus {
-        color: var(--clr-primary);
-        outline: none;
-      }
-
-      &:hover {
-        color: var(--clr-primary);
+      @include media-hover {
+        &:hover,
+        &:focus {
+          color: var(--clr-primary);
+        }
       }
     }
   }
@@ -117,9 +115,11 @@
       font-weight: var(--fw-bold);
       color: var(--clr-primary);
 
-      &:hover,
-      &:focus {
-        color: var(--clr-neutral-700);
+      @include media-hover {
+        &:hover,
+        &:focus {
+          color: var(--clr-neutral-700);
+        }
       }
     }
 

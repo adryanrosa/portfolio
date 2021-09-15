@@ -13,10 +13,11 @@
 
   transition: color 250ms ease-in-out, background-color 250ms ease-in-out;
 
-  &:focus,
-  &:hover {
-    outline: none;
-    background-color: var(--clr-primary);
-    color: var(--clr-neutral-700);
+  @include media-hover {
+    &:focus,
+    &:hover {
+      background-color: var(--clr-primary);
+      color: var(--clr-neutral-700);
+    }
   }
 }
