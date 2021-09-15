@@ -40,8 +40,12 @@
     gap: 0.375rem;
 
     button {
-      font-size: 0.875rem;
+      font-size: 0.75rem;
       padding: 0.12625rem 0.5rem;
+
+      @include breakpoint-up(large) {
+        font-size: 0.875rem;
+      }
     }
   }
 
