@@ -1,3 +1,5 @@
+@use "../utils" as *;
+
 :root {
   --fw-regular: 400;
   --fw-bold: 500;
@@ -15,6 +17,14 @@ h3,
 button {
   font-family: var(--ff-primary);
   font-weight: var(--fw-bold);
+}
+
+p {
+  font-size: 0.9375rem;
+
+  @include breakpoint-up(large) {
+    font-size: 1.0625rem;
+  }
 }
 
 a {

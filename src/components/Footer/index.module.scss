@@ -6,6 +6,12 @@
   background-color: darken(#44475a, 5%);
   opacity: 1.5;
 
+  font-size: 0.9375rem;
+
+  @include breakpoint-up(large) {
+    font-size: 1.0625rem;
+  }
+
   .container {
     max-width: 80rem;
     @include margin-x-auto;

@@ -28,6 +28,10 @@
 
       gap: 6rem;
     }
+
+    @include breakpoint-up(xxl) {
+      margin-top: 15rem;
+    }
   }
 
   .grid {
