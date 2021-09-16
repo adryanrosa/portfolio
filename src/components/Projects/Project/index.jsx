@@ -23,8 +23,7 @@ function Project({ image, placeholder, title, tools, text, github, live }) {
           {tools.map((tool) => <Button key={ tool }>{tool}</Button>)}
         </div>
 
-        <p>{text}</p>
-        <p>{text}</p>
+        {text}
 
         <div className={ classes.icons }>
           <a href={ github } target="_blank" rel="noreferrer">
