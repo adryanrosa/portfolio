@@ -34,7 +34,7 @@ function Projects() {
       title: 'Bookmark landing page',
       text: (
         <p>
-          This challenge really tested my layout skills, but in the end I can say I&apos;ve got pixel perfect close to the original design. In the process, I&apos;ve learned most building the tabbed features section and the FAQ accordion. I also could improve my Sass skills and get to know the new Dart-Sass features.
+          This challenge really tested my layout skills, but in the end I can say I&apos;ve got pixel perfect close to the original design. In the process, I&apos;ve learned the most building the tabbed features section and the FAQ accordion. I also could improve my Sass skills and get to know the new Dart-Sass features.
         </p>
       ),
       tools: ['React', 'Sass', 'CSS Modules'],
