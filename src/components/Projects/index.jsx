@@ -51,7 +51,7 @@ function Projects() {
           In this single page application I could implement for the first time a more robust, maintainable CSS using a preprocessor. While building it I learned how to validade a form input, handle failed API requests and was able to practice my flexbox/grid abilities.
         </p>
       ),
-      tools: ['React', 'Sass', 'BEM'],
+      tools: ['React', 'Rest API', 'Sass', 'BEM'],
       github: 'https://github.com/adryanrosa/url-shortening-api-landing-page',
       live: 'https://url-shortening-api-landing-page-alpha.vercel.app/',
     },
