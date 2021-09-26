@@ -2,7 +2,7 @@
 import Image from 'next/image';
 
 import classes from './index.module.scss';
-import Button from '../../../UI/Button';
+import buttonClass from '../../../UI/Button/index.module.scss';
 
 function Project({ image, placeholder, title, tools, text, github, live }) {
   return (
@@ -20,7 +20,7 @@ function Project({ image, placeholder, title, tools, text, github, live }) {
         <h2>{title}</h2>
 
         <div className={ classes.buttons }>
-          {tools.map((tool) => <Button key={ tool }>{tool}</Button>)}
+          {tools.map((tool) => <span className={ buttonClass.button } key={ tool }>{tool}</span>)}
         </div>
 
         {text}
