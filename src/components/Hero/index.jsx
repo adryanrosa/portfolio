@@ -12,7 +12,7 @@ function Hero() {
         <div className={ classes.grid }>
           <div className={ classes['text-container'] }>
             <h1>
-              Hey,
+              Hey there,
               <br />
               I&apos;m Adryan
             </h1>
