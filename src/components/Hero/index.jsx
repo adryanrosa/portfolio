@@ -57,7 +57,7 @@ function Hero() {
           </a>
 
           <a href="/resume.pdf" className={ buttonClass.button } target="_blank">
-            <div className={ classes['button-flex'] }>
+            <div className={ `${classes['button-flex']} ${classes['flex-reverse']}` }>
               Download Resume
 
               <svg xmlns="http://www.w3.org/2000/svg" width="1.125em" height="1.125em" fill="currentColor" className="bi bi-file-pdf" viewBox="0 0 16 16">
