@@ -35,7 +35,7 @@ function Projects() {
       title: 'Trivia API Quizz',
       text: (
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit laborum aliquid eligendi quod nam. Sint reprehenderit impedit voluptates ducimus maiores id amet deserunt perspiciatis excepturi accusamus enim quibusdam distinctio, illum ipsum? Atque perspiciatis ut hic.
+          The app was built with Redux to manage global states (timer, game settings and user/game info) and styled-components for writing the CSS in JS, enabling declarative, conflict-free and reusable styles, which came in very helpful for styling the timer component, since it depends on the time state.
         </p>
       ),
       tools: ['Next', 'Redux', 'styled-components', 'Rest API'],
