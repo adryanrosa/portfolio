@@ -68,7 +68,7 @@ function Projects() {
       ),
       tools: ['React', 'Rest API', 'Sass', 'BEM'],
       github: 'https://github.com/adryanrosa/url-shortening-api-landing-page',
-      live: 'https://url-shortening-api-landing-page-alpha.vercel.app/',
+      live: 'https://url-shortening-api-landing-page-adryanrosa.vercel.app/',
     },
   ];
 
