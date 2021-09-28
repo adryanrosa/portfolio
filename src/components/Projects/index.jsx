@@ -3,7 +3,7 @@ import classes from './index.module.scss';
 
 import Project from './Project';
 import GraphqlCountriesApi from '../../../public/images/graphql-countries-api.gif';
-import Quizz from '../../../public/images/quizz.gif';
+import Quiz from '../../../public/images/quiz.gif';
 import BookmarkingLandingPage from '../../../public/images/bookmark-landing-page.gif';
 import UrlShorteningPage from '../../../public/images/url-shortening-api.gif';
 
@@ -30,17 +30,17 @@ function Projects() {
     },
     {
       id: 1,
-      image: Quizz,
+      image: Quiz,
       placeholder: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAMAAAC67D+PAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAllBMVEUfHjUhIDkXHS0YHS0aHS0dIDAcHy8gIzs2KTVQJTZCHEMnIT0lIjkmIjokIzohIzshJD1EMjptMkFYI1EuI0EvIzsyJT0wIzsqIzwiJD0iIz0xNExARVs5PlMqLEIrKj0uLD4sKz0nKD0nKUItL0cmKEEkJD0qJ0A0Q1suM0gmIzwhIzwiJDwkK0Y1YXoqQlciIzz///8ni+e4AAAAAWJLR0Qx2dsdcgAAAAd0SU1FB+UJFRMvAOz2wAkAAABQSURBVAjXbcY1AoAwDADA4O4a3K1I//862oGNmw5AECWZUVTQdMO0bMdxPfCDMIqTNMsRirKqm7brBwQcp3lZt/1gRYLndT+UlyMUv3L/fQHCPwlybKlTdgAAACZ0RVh0Q3JlYXRpb24gVGltZQB0ZXIgMjEgc2V0IDIwMjEgMTY6NDU6Mzbar6A5AAAAJXRFWHRkYXRlOmNyZWF0ZQAyMDIxLTA5LTIxVDE5OjQ2OjE3KzAwOjAwEfNI8gAAACV0RVh0ZGF0ZTptb2RpZnkAMjAyMS0wOS0yMVQxOTo0NjoxNyswMDowMGCu8E4AAAAZdEVYdFNvZnR3YXJlAGdub21lLXNjcmVlbnNob3TvA78+AAAAAElFTkSuQmCC',
-      title: 'Trivia API Quizz',
+      title: 'Trivia API Quiz',
       text: (
         <p>
           The app was built with Redux to manage global states (timer, game settings and user/game info) and styled-components for writing the CSS in JS, enabling declarative, conflict-free and reusable styles, which came in very helpful for styling the timer component, since it depends on the time state.
         </p>
       ),
       tools: ['Next', 'Redux', 'styled-components', 'Rest API'],
-      github: 'https://github.com/adryanrosa/quizz',
-      live: 'https://quizz-adryanrosa.vercel.app/',
+      github: 'https://github.com/adryanrosa/trivia-api-quiz',
+      live: 'https://trivia-api-quiz-adryanrosa.vercel.app/',
     },
     {
       id: 2,
